@@ -1,0 +1,149 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#gameCanvas {
+  border: 2px solid #333;
+  background-color: #f8f8f8;
+  display: block;
+  margin: 0 auto;
+}
+
+#startScreen, #gameOver, #controls {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#startScreen input, #gameOver input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-container button {
+  flex: 1;
+  max-width: 150px;
+}
+
+#startScreen button, #gameOver button, #controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#startScreen button:hover, #gameOver button:hover, #controls button:hover {
+  background-color: #218838;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.control-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#controls button {
+  background-color: #007bff;
+  font-size: 1.5rem;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#controls button:hover {
+  background-color: #0056b3;
+}
+
+#gameOver {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#ranking {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  text-align: center;
+}
+
+#ranking h2 {
+  margin-bottom: 10px;
+}
+
+#rankingList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#rankingList li {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 5px 0;
+  border-radius: 3px;
+}
